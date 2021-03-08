@@ -16,4 +16,12 @@ class RaagPlayer {
     await _channel.invokeMethod('testToast');
   }
 
+  static Future play(String url) async{
+    await _channel.invokeMethod('play', {'url': url});
+  }
+
+  static Future stop() async {
+    await _channel.invokeMethod('stop');
+}
+
 }

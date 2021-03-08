@@ -1,5 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="in.amfoss.raag_player_example">
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
    <application
         android:label="raag_player_example"
         android:icon="@mipmap/ic_launcher">

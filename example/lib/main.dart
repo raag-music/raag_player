@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'dart:async';
 
@@ -52,7 +54,10 @@ class _MyAppState extends State<MyApp> {
         body: Center(
           child: MaterialButton(
             child: Text('Toast'),
-            onPressed: () => {RaagPlayer.testToast},
+            onPressed: () {
+              RaagPlayer.play(
+                  'file:///storage/emulated/0/Download/rickroll.mp3');
+            },
           ),
         ),
       ),
